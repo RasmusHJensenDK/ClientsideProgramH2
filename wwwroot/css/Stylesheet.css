@@ -1,0 +1,402 @@
+﻿
+.body html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.smallpic {
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.box {
+    transition: box-shadow .3s;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    margin-bottom: 50px;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+}
+
+    .box:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
+
+.infotext {
+
+}
+
+.headlineboxes {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar {
+    background: rgba(75,75,75,0.7);
+}
+
+    .navbar .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #fbc531;
+            font-weight: bold;
+        }
+
+    .navbar .navbar-nav .active > .nav-link {
+        color: #fbc531;
+    }
+
+footer a.text-light:hover {
+    color: #fed136 !important;
+    text-decoration: none;
+}
+
+footer .cizgi {
+    border-right: 1px solid #535e67;
+}
+
+#sticky-navigation {
+    background: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 992px) {
+    footer .cizgi {
+        border-right: none;
+    }
+}
+
+.carousel-inner {
+    margin-top: 380px;
+    padding-top: 40px;
+}
+
+.carousel-item {
+}
+
+.grid-container {
+    font-family: 'Rubik', sans-serif;
+}
+
+@supports(display: grid) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "header header header" "title title footer" "main main main";
+    }
+
+    .grid-item {
+        color: #fff;
+        padding: 3.5em 1em;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .main {
+        grid-area: main;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .items {
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        transition: all 0.2s;
+        transform: scale(0.98);
+        will-change: transform;
+        user-select: none;
+        cursor: pointer;
+    }
+
+        .items.active {
+            background: rgba(255,255,255,0.3);
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+            transform: scale(1);
+        }
+
+    .item {
+        display: inline-block;
+        min-height: 250px;
+        min-width: 400px;
+        margin: 2em 1em;
+    }
+}
+
+.mouse {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    position: absolute;
+    top: 40px;
+    position: absolute;
+    left: 51%;
+    margin-left: -26px;
+}
+
+.mouse__wheel {
+    display: block;
+    margin: 6px auto;
+    width: 3px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #222;
+    border: 1px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+
+.body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    color: #6c6c6f;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #323233;
+    text-transform: uppercase;
+}
+
+
+.navbar-brand span {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    letter-spacing: 0.1em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+    font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.navbar .active {
+    color: yellow!important;
+}
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #fed136;
+    }
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    border-top: 3px solid #fed136;
+}
+
+.dropdown-item:hover {
+    background-color: #fed136;
+    color: #fff;
+}
+
+nav {
+    -webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+}
+
+.shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+}
+
+.banner {
+    background-image: url('http://www.hd-freewallpapers.com/latest-wallpapers/abstract-website-backgrounds.jpg');
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner-text {
+    padding: 200px 0 150px 0;
+}
+
+.banner-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.banner-sub-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.btn-banner {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.text-intro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* mobile view */
+@media (max-width:500px) {
+    .navbar-nav {
+        background-color: #000;
+        border-top: 3px solid #fed136;
+        color: #fff;
+        z-index: 1;
+        margin-top: 5px;
+    }
+
+        .navbar-nav .nav-item .nav-link {
+            padding: 0.7em 1em !important;
+            font-size: 100%;
+            font-weight: 500;
+        }
+
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+
+    .banner-heading {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .banner-sub-heading {
+        font-size: 10px;
+        font-weight: 200;
+        line-height: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+
+    .banner-sub-heading {
+        font-size: 23px;
+        font-weight: 200;
+        line-height: 23px;
+        margin-bottom: 40px;
+    }
+}
+
+.mainvaerk {
+    margin-top: 120px;
+    width: 100%;
+    min-height: 800px;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 120px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.infotextvaerk {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    display: block;
+}
+
+.mainud {
+    background: url(/Images/icy.jpg);
+    min-height : 100%;
+    min-width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#topheader .navbar-nav li > a {
+    text-transform: capitalize;
+    color: #333;
+    transition: background-color .2s, color .2s;
+    &:hover, &:focus
+
+{
+    background-color: #333;
+    color: #fff;
+}
+
+}
+
+#topheader .navbar-nav li.active > a {
+    background-color: #333;
+    color: #fff;
+}

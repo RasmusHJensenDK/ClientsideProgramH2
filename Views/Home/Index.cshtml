@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div></div>
+            <img class="d-block w-100" src="/Images/mb2.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <div></div>
+            <img class="d-block w-100" src="/Images/mb3.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <div></div>
+            <img class="d-block w-100" src="/Images/mb1.png" alt="Third slide">
+        </div>
+    </div>
+</div>
+
+
+<div style="box-shadow: 0 0 11px rgba(33,33,33,.2);">
+    <div style="background-color: white; border-radius: 25px; margin-bottom: -40px; margin-top: -80px;">
+        <h2 style="text-align: center; padding-top: 30px; text-shadow: 5px 10px 8px #888888;">
+            Vi har altid over <b>32.000 biler</b> på lager
+            <br />
+        </h2>
+        <h5 style="text-align: center; margin-left: 10px;"><i>- Se udvalgte biler nedenunder </i></h5>
+    </div>
+    <div class="grid-container" id="section-2" style="background-color: white;">
+        <main class="grid-item main">
+            <div class="items">
+                <div class="item item1">
+                    <img src="~/Images/mb1.png" style="background-size: contain; max-height: 400px; margin: -80px" />
+                </div>
+                <div class="item item2">
+                    <img src="~/Images/mb2.png" style="background-size: contain; max-height: 400px; margin: -80px" />
+                </div>
+                <div class="item item3">
+                    <img src="~/Images/mb3.png" style="background-size: contain; max-height: 400px; margin: -80px" />
+                </div>
+                <div class="item item4">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+                <div class="item item5">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+                <div class="item item6">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+                <div class="item item7">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+                <div class="item item8">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+                <div class="item item9">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+                <div class="item item10">
+                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container" style="background-color: white;">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm box">
+                <h4 class="headlineboxes" style="color: Red"><i>Coupe</i></h4>
+                <img class="smallpic" src="~/Images/Coupe.png" />
+                <br />
+                <p class="infotext">
+                    Kan man forbedre et design-hit? Ja, Mercedes-Benz kan. Ved introduktionen i 2013 tog CLA’s dristige design de fleste med storm.
+                    Med den ny CLA har Mercedes-Benz fintunet de karakteristiske 4-dørs coupe-linjer og givet CLA et endnu mere sportsligt og selvbevidst udtryk.
+                    Motorprogrammet består af de nyeste generationer af effektive benzin- og dieselmotorer, hvor høj ydelse kører hånd i hånd med lave CO2 værdier
+                    – fra CLA 180 d til AMG CLA 45 med 4-hjulstræk og en acceleration fra 0 til 100 på 4,2 sekunder.
+                </p>
+            </div>
+            <div class="col-sm box">
+                <h4 class="headlineboxes" style="color: gray"><i>Cabiolet</i></h4>
+                <img class="smallpic" src="~/Images/Cabriolet.png" />
+                <br />
+                <p class="infotext">
+                    Særligt to ændringer har gjort C-Klasse Cabriolet helt unik. En helt ny 4-cylindret motor og en forbedret affjedring giver en køreoplevelse,
+                    som både føles mere sporty og alligevel mere behagelig. Allerede her vil vi opfordre dig til at komme ind og mærke forskellen.
+                </p>
+            </div>
+            <div class="col-sm box">
+                <h4 class="headlineboxes" style="color: black"><i>Stationcar</i></h4>
+                <img class="smallpic" src="~/Images/Stationcar.png" />
+                <br />
+                <p class="infotext">
+                    Med den nye CLA Shooting Brake fra Mercedes-Benz får du det bedste fra alle verdener.
+                    Du får et enestående design med coupéens dynamik. Men det betyder langt fra, at den går på kompromis med rummeligheden.
+                    Snarere tværtimod. Den er nemlig lige så rummelig som en model i C-klassen. Det er et bagagerum, der inviterer til eventyr,
+                    hvor du nemt kan tage racercyklen eller snowboardet med. Faktisk er der plads til hele 495 liter i bagagerummet.
+                    Og med 1,32 meter i bredden har bilen den største bagagerumsbredde, hvis man sammenligner med konkurrenterne.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const slider = document.querySelector('.items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+    });
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+</script>

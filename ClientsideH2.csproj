@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\mb1.png" />
+    <None Include="wwwroot\Images\mb2.png" />
+    <None Include="wwwroot\Images\mb3.png" />
+    <None Include="wwwroot\Images\mb4.png" />
+  </ItemGroup>
+
+</Project>

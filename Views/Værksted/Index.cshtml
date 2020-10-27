@@ -1,0 +1,122 @@
+﻿@model ClientsideH2.Models.Værksted
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div style="margin: auto; width: 100%; background-size: contain">
+    <img style="width: 100%;" src="~/Images/mercedes_vaerksted.jpg") />
+</div>
+<div class="container">
+    <div class="row" style="background-color: white;">
+        <div class="col-sm" style="margin-top: -200px; max-width: 90%; margin-left: 5%; margin-right: 5%;">
+            <div class="mainvaerk">
+                <h1 style="text-align: center; padding-top: 20px; font-weight:200">Er det tid til en tur på værkstedet?</h1>
+                <h4 style="text-align: center; font-weight:200; text-transform: lowercase;"> <i>..i så fald, kan du booke tid herunder..</i></h4>
+
+                <div class="row">
+                    <div class="col-sm" style="max-width: 50%; margin: auto; margin-top: 25px;">
+                        <span class="infotextvaerk">
+                            Har du fået en skade på din bil, eller er det tid til service? Hvad enten årsagen er, så står vi klar til at tage imod din bil på et af vores mange værksteder rundt omkring i landet.
+                            <br />
+                            <img src="~/Images/Stationcar.png" style="max-width: 150px;" />
+                            <br />
+                            <br />
+                            Ved at udfylde nedenstående formular sender du en booking forespørgsel som vil blive behandlet hurtigst muligt. Efterfølgende sender vi naturligvis en bekræftelse på din booking.
+                        </span>
+                        <h2 style="text-align: center; margin-top: 25px;"> Beregn servicepris</h2>
+                        <span class="infotextvaerk">
+                            Vil du gerne have en idé om hvad et service kommer til at koste? Så kan du beregne din pris her.
+                        </span>
+                        <div class="text-center" style="margin-top: 25px;">
+                            <button type="button" class="btn btn-primary">BEREGN SERVICEPRIS</button>
+                            <span class="infotextvaerk" style="margin-top: 25px;">
+                                <b> Mercedes-Benz ønsker dig en fortræffelig dag.</b>
+                            </span>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <form asp-action="Create" style="margin-top: 30px; margin-bottom: -25px;">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <div class="container" style="display: inline-block; margin-bottom: -18px;">
+                            <div class="row">
+                                <input asp-for="Navn" placeholder="Navn" class="form-control" style="width: 30%; margin-left: 18%; margin-right: 10%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="Navn" class="text-danger"></span>
+                                <input asp-for="Email" placeholder="Email" class="form-control" style="width: 30%; margin-left: -5%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container" style="display: inline-block">
+                            <div class="row">
+                                <input asp-for="tlf" placeholder="Mobil" class="form-control" style="width: 30%; margin-left: 18%; margin-right: 10%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="tlf" class="text-danger"></span>
+                                <input asp-for="NrPlader" placeholder="Nummerplade" class="form-control" style="width: 30%; margin-left: -5%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="NrPlader" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select asp-for="workorder" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center; background-color:rgba(192,192,192,0.3); text-indent: 37%; min-height: 34px; color:dimgray; border: none!important">
+                            <option value="HELP">Hvad kan vi hjælpe med?</option>
+                            <option value="Service">Service</option>
+                            <option value="Reperation">Reperation</option>
+                            <option value="Syn">Syn</option>
+                            <option value="Hjulskift">Hjulskift</option>
+                            <option value="Undervognsbehandling">Undervognsbehandling</option>
+                            <option value="Andet">Andet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select asp-for="Model" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center; background-color:rgba(192,192,192,0.3); text-indent: 44%; min-height: 34px; color:dimgray; border: none!important">
+                            <option value="afdeling">Vælg model</option>
+                            <option value="A">A-Klasse</option>
+                            <option value="B">B-Klasse</option>
+                            <option value="C">C-Klasse</option>
+                            <option value="E">E-Klasse</option>
+                            <option value="G">G-Klasse</option>
+                            <option value="S">S-Klasse</option>
+                            <option value="AMG">AMG</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select asp-for="Afdeling" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center; background-color:rgba(192,192,192,0.3); text-indent: 43%; min-height: 34px; color:dimgray; border: none!important">
+                            <option value="afdeling">Vælg afdeling</option>
+                            <option value="Skagen">Skagen</option>
+                            <option value="Aalborg">Aalborg</option>
+                            <option value="Århus">Århus</option>
+                            <option value="Vejle">Vejle</option>
+                            <option value="Esbjerg">Esbjerg</option>
+                            <option value="Odense">Odense</option>
+                            <option value="Køge">Køge</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="kilometer" placeholder="Kørte kilometer" class="form-control" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                        <span asp-validation-for="kilometer" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center;">
+                        <input asp-for="consense" type="checkbox" />
+                        Ja, jeg accepterer behandlingen af mit navn, adresse, telefonnummer, e-mail samt køretøj, for at kunne modtage informativt og uddannende indhold fra
+                        MB om MB, services og generel vedligehold af køretøjet. Behandlingen sker i henhold til MB persondatapolitik,
+                        hvori rettigheder i forbindelse med denne behandling er specificeret. Jeg kan tilbagekalde mit samtykke igennem MB Kundeportal eller ved at
+                        kontakte MB
+                    </div>
+                    <div class="form-group" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center;">
+                        <input asp-for="psdpt" type="checkbox" />
+                        Jeg acceptere MB Persondatapolitik *
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Send forespørgsel" class="btn btn-primary" style="margin-left: 42%;  margin-bottom: 25px;" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
