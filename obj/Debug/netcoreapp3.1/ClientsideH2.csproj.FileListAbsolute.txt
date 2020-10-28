@@ -221,3 +221,4 @@ C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.dll
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.pdb
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.genruntimeconfig.cache
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.csprojAssemblyReference.cache
+C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Kontakt\Index.cshtml.g.cs

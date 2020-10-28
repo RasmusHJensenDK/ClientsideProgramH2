@@ -2,72 +2,109 @@
     ViewData["Title"] = "Home Page";
 
 }
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div></div>
-            <img class="d-block w-100" src="/Images/mb2.png" alt="First slide">
+
+<div class="backgroundimage">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card" style="width: 24rem; background-color: rgba(255, 255, 255, 0.3); border-radius: 25px; margin-top: 90px; margin-left: 10%;">
+                    <img class="card-img-top" src="/Images/Coupe.png" style="margin-top: -15px;" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-top: -10px;">Mercedes-Benz AMG</h5>
+                        <p class="card-text" style="color: gray; background-color: white; border-radius: 25px; padding: 8px;">
+                            <i>
+                                AMG i Afalterbach uden for Stuttgart har igen bygget et ikon af en sportsvogn for Mercedes-Benz.
+                                Denne gang hedder den Mercedes AMG GT Coupé – håndbygget motor, allerseneste baneteknologi i drivline og undervogn
+                                og en lige linje tilbage til den legendariske Sølvpil fra 50’erne. Det ses tydeligt i linjerne.
+                            </i>
+                        </p>
+                        <a href="#" class="btn btn-primary">Læs mere om AMG</a>
+                    </div>
+                </div>
+
+                <img class="d-block w-100" style="margin-top: -315px;" src="/Images/amg2.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 24rem; background-color: rgba(255, 255, 255, 0.3); border-radius: 25px; margin-top: 90px; margin-left: 65%;">
+                    <img class="card-img-top" src="/Images/Stationcar.png" style="margin-top: -15px;" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-top: -10px;">Mercedes-Benz CLA Shooting Brake</h5>
+                        <p class="card-text" style="color: gray; background-color: white; border-radius: 25px; padding: 8px;">
+                            <i>
+                                Med den nye CLA Shooting Brake fra Mercedes-Benz får du det bedste fra alle verdener.
+                                Du får et enestående design med coupéens dynamik. Men det betyder langt fra, at den går på kompromis med rummeligheden.
+                                Snarere tværtimod. Den er nemlig lige så rummelig som en model i C-klassen.
+                            </i>
+                        </p>
+                        <a href="#" class="btn btn-primary">Læs mere om CLA</a>
+                    </div>
+                </div>
+                <img class="d-block w-100" style="margin-top: -315px;" src="/Images/shooting.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 24rem; background-color: rgba(255, 255, 255, 0.3); border-radius: 25px; margin-top: 90px; margin-left: 10%;">
+                    <img class="card-img-top" src="/Images/Stationcar.png" style="margin-top: -15px;" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-top: -10px;">Mercedes-Benz GLE</h5>
+                        <p class="card-text" style="color: gray; background-color: white; border-radius: 25px; padding: 8px;">
+                            <i>
+                                Er du til luksus og råstyrke i en og samme bil? Så er Mercedes GLE med garanti noget for dig. GLE-Klassen er alt det,
+                                fans af SUV’ere har drømt om: Råstyrke, smidighed, komfort og intelligente løsninger pakket ind i et dynamisk, elegant og
+                                respektindgydende sportsligt ydre. Bilen er også super rummelig og en af de største indenfor klassen.
+                            </i>
+                        </p>
+                        <a href="#" class="btn btn-primary">Læs mere om GLE</a>
+                    </div>
+                </div>
+
+                <img class="d-block w-100" style="margin-top: -315px;" src="/Images/GLB.png" alt="Third slide">
+            </div>
         </div>
-        <div class="carousel-item">
-            <div></div>
-            <img class="d-block w-100" src="/Images/mb3.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <div></div>
-            <img class="d-block w-100" src="/Images/mb1.png" alt="Third slide">
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </div>
 
-
-<div style="box-shadow: 0 0 11px rgba(33,33,33,.2);">
-    <div style="background-color: white; border-radius: 25px; margin-bottom: -40px; margin-top: -80px;">
-        <h2 style="text-align: center; padding-top: 30px; text-shadow: 5px 10px 8px #888888;">
-            Vi har altid over <b>32.000 biler</b> på lager
+<div style="box-shadow: 0 0 11px rgba(33,33,33,.2); max-width: 90%; margin-left: 5%">
+    <div style="background-color: white; border-radius: 25px; margin-bottom: -40px; margin-top: -40px;">
+        <h2 style="text-align: center; padding-top: 60px; text-shadow: 5px 10px 8px #888888;">
+            Vi har altid over <b>732.000 biler</b> på lager
             <br />
         </h2>
         <h5 style="text-align: center; margin-left: 10px;"><i>- Se udvalgte biler nedenunder </i></h5>
     </div>
-    <div class="grid-container" id="section-2" style="background-color: white;">
+    <div class="grid-container" id="section-2" style="background-color: white; padding-top: 25px;">
         <main class="grid-item main">
             <div class="items">
                 <div class="item item1">
-                    <img src="~/Images/mb1.png" style="background-size: contain; max-height: 400px; margin: -80px" />
+                    <img src="~/Images/MB/mb1.png" id="1" style="background-size: contain; max-height: 400px; margin: -80px" />
                 </div>
                 <div class="item item2">
-                    <img src="~/Images/mb2.png" style="background-size: contain; max-height: 400px; margin: -80px" />
+                    <img src="~/Images/MB/mb2.png" id="2" style="background-size: contain; max-height: 400px; margin: -80px" />
                 </div>
                 <div class="item item3">
-                    <img src="~/Images/mb3.png" style="background-size: contain; max-height: 400px; margin: -80px" />
+                    <img src="~/Images/MB/mb3.png" id="3" style="background-size: contain; max-height: 400px; margin: -80px" />
                 </div>
                 <div class="item item4">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                    <img src="~/Images/MB/mb4.png" id="4" style="background-size: contain; max-height: 400px; margin: -80px " />
                 </div>
                 <div class="item item5">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
-                </div>
-                <div class="item item6">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
-                </div>
-                <div class="item item7">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
-                </div>
-                <div class="item item8">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
-                </div>
-                <div class="item item9">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
-                </div>
-                <div class="item item10">
-                    <img src="~/Images/mb4.png" style="background-size: contain; max-height: 400px; margin: -80px " />
+                    <img src="~/Images/MB/mb5.png" id="5" style="background-size: contain; max-height: 400px; margin: -80px " />
                 </div>
             </div>
         </main>
     </div>
-    <div class="container" style="background-color: white;">
+    <div class="container" style="background-color: white; margin-bottom: 25px;">
         <div class="row" style="text-align: center;">
-            <div class="col-sm box">
-                <h4 class="headlineboxes" style="color: Red"><i>Coupe</i></h4>
+            <div class="col-sm box" style="cursor: pointer" onclick="" id="carCoupe">
+                <h4 class="headlineboxes" id="namecoupe" style="color: red"><i>Coupe</i></h4>
                 <img class="smallpic" src="~/Images/Coupe.png" />
                 <br />
                 <p class="infotext">
@@ -77,8 +114,8 @@
                     – fra CLA 180 d til AMG CLA 45 med 4-hjulstræk og en acceleration fra 0 til 100 på 4,2 sekunder.
                 </p>
             </div>
-            <div class="col-sm box">
-                <h4 class="headlineboxes" style="color: gray"><i>Cabiolet</i></h4>
+            <div class="col-sm box" style="cursor: pointer" onclick="" id="carCab">
+                <h4 class="headlineboxes" id="namecab" style="color: gray"><i>Cabiolet</i></h4>
                 <img class="smallpic" src="~/Images/Cabriolet.png" />
                 <br />
                 <p class="infotext">
@@ -86,8 +123,8 @@
                     som både føles mere sporty og alligevel mere behagelig. Allerede her vil vi opfordre dig til at komme ind og mærke forskellen.
                 </p>
             </div>
-            <div class="col-sm box">
-                <h4 class="headlineboxes" style="color: black"><i>Stationcar</i></h4>
+            <div class="col-sm box" style="cursor: pointer" onclick="" id="carStation">
+                <h4 class="headlineboxes" id="namestd" style="color: gray"><i>Stationcar</i></h4>
                 <img class="smallpic" src="~/Images/Stationcar.png" />
                 <br />
                 <p class="infotext">
@@ -137,6 +174,41 @@
         } else {
             $('.scrollup').fadeOut();
         }
+    });
+
+    $(document).ready(function () {
+
+    });
+
+    $("#carCab").click(function () {
+        $("#1").attr("src", "/Images/MB/mbcoupe1.png");
+        $("#2").attr("src", "/Images/MB/mbcoupe2.png");
+        $("#3").attr("src", "/Images/MB/mbcoupe3.png");
+        $("#4").attr("src", "/Images/MB/mbcoupe4.png");
+        $("#5").attr("src", "/Images/MB/mbcoupe5.png");
+        $("#namecab").css("color", "red");
+        $("#namecoupe").css("color", "gray");
+        $("#namestd").css("color", "gray");
+    });
+    $("#carCoupe").click(function () {
+        $("#1").attr("src", "/Images/MB/mb1.png");
+        $("#2").attr("src", "/Images/MB/mb2.png");
+        $("#3").attr("src", "/Images/MB/mb3.png");
+        $("#4").attr("src", "/Images/MB/mb4.png");
+        $("#5").attr("src", "/Images/MB/mb5.png");
+        $("#namecoupe").css("color", "red");
+        $("#namecab").css("color", "gray");
+        $("#namestd").css("color", "gray");
+    });
+    $("#carStation").click(function () {
+        $("#1").attr("src", "/Images/MB/mbstd1.png");
+        $("#2").attr("src", "/Images/MB/mbstd2.png");
+        $("#3").attr("src", "/Images/MB/mbstd3.png");
+        $("#4").attr("src", "/Images/MB/mbstd4.png");
+        $("#5").attr("src", "/Images/MB/mbstd5.png");
+        $("#namestd").css("color", "red");
+        $("#namecab").css("color", "gray");
+        $("#namecoupe").css("color", "gray");
     });
 
 </script>

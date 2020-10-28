@@ -7,6 +7,5 @@ namespace ClientsideH2.Models
 {
     public class KontaktModel
     {
-        //public string 
     }
 }

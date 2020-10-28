@@ -24,25 +24,25 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navbarnav">
                         <li class="nav-item">
                             <a class="nav-link" href="Værksted">Værksted</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link active" style="color: yellow" href="Home">Udstilling</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="Home">Udstilling</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Medlemskab</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakt</a>
+                            <a class="nav-link" href="Kontakt">Kontakt</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <main role="main" class="pb-3">
+            <main role="main" style="background-color: white;" class="pb-3">
                 @RenderBody()
             </main>
         </div>
@@ -60,8 +60,4 @@
 </html>
 
 <script>
-    $('.navbar-nav a').on('click', function () {
-        $('.navbar-nav').find('li.active').removeClass('active');
-        $(this).parent('li').addClass('active');
-    });
 </script>
