@@ -9,11 +9,10 @@ namespace ClientsideH2.Controllers
 {
     public class VærkstedController : Controller
     {
-
         // GET: VærkstedController
         public ActionResult Index()
         {
-            return View();
+            return View(new Models.Værksted());
         }
 
         // GET: VærkstedController/Details/5

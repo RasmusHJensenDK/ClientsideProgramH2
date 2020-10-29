@@ -1,11 +1,12 @@
 ﻿@model ClientsideH2.Models.Værksted
-
+@using static ClientsideH2.Repositories.DatabaseWrapper 
 @{
     ViewData["Title"] = "Create";
 }
 
+
 <div style="margin: auto; width: 100%; background-size: contain">
-    <img style="width: 100%;" src="~/Images/mercedes_vaerksted.jpg") />
+    <img style="width: 100%;" src="~/Images/mercedes_vaerksted.jpg" ) />
 </div>
 <div class="container">
     <div class="row" style="background-color: white;">
@@ -34,7 +35,7 @@
                                 <b> Mercedes-Benz ønsker dig en fortræffelig dag.</b>
                             </span>
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -111,12 +112,17 @@
                         <input asp-for="psdpt" type="checkbox" />
                         Jeg acceptere MB Persondatapolitik *
                     </div>
+                    <asp:button style="height:200px; background-color: blue; width: 200px;" type="submit" On action="kaldmig" >
 
-                    <div class="form-group">
-                        <input type="submit" value="Send forespørgsel" class="btn btn-primary" style="margin-left: 42%;  margin-bottom: 25px;" />
-                    </div>
+                    </asp:button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function kaldmig() {
+        @{ Model.InsertIntoDB();}
+    }
+</script>
