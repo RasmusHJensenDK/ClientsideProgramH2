@@ -182,13 +182,13 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     color: #323233;
-    text-transform: uppercase;
 }
 
 
 .navbar {
     color: #fff;
-    background: linear-gradient(90deg, rgba(2,0,36,0.923406862745098) 0%, rgba(204,60,60,0.4822303921568627) 77%)!important;
+    /*background: linear-gradient(90deg, rgba(0,0,0,0.9346113445378151) 0%, rgba(162,162,162,0.6) 77%) !important;*/
+    background: linear-gradient(90deg, rgba(78,148,134,0.8085609243697479) 0%, rgba(0,0,0,0.7346113445378151) 77%) !important;
     padding: 5px 16px;
     border-bottom-right-radius: 55px;
     border-bottom-left-radius: 55px;
@@ -206,9 +206,9 @@ h1, h2, h3, h4, h5, h6 {
     .navbar .navbar-brand {
         color: #efe5ff;
         padding-left: 0;
-        padding-right: 50px;
+        padding-right: 52%;
         font-size: 24px;
-        margin-left: 300px;
+        margin-left: 50px;
     }
 
         .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
@@ -294,6 +294,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background: none !important;
 }
+
+.nav-item {
+    color: white!important;
+}
+
+    .nav-item:hover {
+        color: goldenrod!important;
+        
+    }
 
 .navbar .dropdown-menu {
     border-radius: 1px;
@@ -496,7 +505,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(/Images/roadforrest.jpg);
     margin-left: -230px;
     margin-right: -230px;
-    margin-top: -50px;
+    margin-top: -75px;
     /* Full height */
     height: 1000px;
     /* Center and scale the image nicely */

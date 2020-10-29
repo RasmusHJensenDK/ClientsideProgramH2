@@ -15,9 +15,8 @@ namespace ClientsideH2.Repositories
             _connectionString = connectionString;
         }
 
-        public DataTable ExecuteQuery(string query)
+        public void ExecuteQuery(string query)
         {
-            var dataTable = new DataTable();
 
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -26,11 +25,9 @@ namespace ClientsideH2.Repositories
                     connection.Open();
 
                     SqlDataAdapter da = new SqlDataAdapter(command);
-                    da.Fill(dataTable);
+                    string abc = "l";
                 }
             }
-
-            return dataTable;
         }
         public SqlConnection GetOpenConnection()
         {

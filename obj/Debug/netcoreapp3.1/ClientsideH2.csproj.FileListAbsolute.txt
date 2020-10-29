@@ -111,6 +111,8 @@ C:\Users\c98101rhj\OneDrive - Ejner Hessel A S\Desktop\Skole H2\Clientside\Clien
 C:\Users\c98101rhj\OneDrive - Ejner Hessel A S\Desktop\Skole H2\Clientside\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Person\Create.cshtml.g.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\package-lock.json
+C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\package.json
 C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\ClientsideH2.exe
 C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\ClientsideH2.deps.json
@@ -207,6 +209,8 @@ C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\runtimes\win\lib\ne
 C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.AssemblyInfoInputs.cache
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.AssemblyInfo.cs
+C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.csproj.CoreCompileInputs.cache
+C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.MvcApplicationPartsAssemblyInfo.cache
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.RazorAssemblyInfo.cache
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.RazorAssemblyInfo.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.TagHelpers.input.cache
@@ -219,6 +223,7 @@ C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Person\
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Værksted\Create.cshtml.g.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\Værksted\Index.cshtml.g.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -232,7 +237,3 @@ C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.dll
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.pdb
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.genruntimeconfig.cache
 C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.csprojAssemblyReference.cache
-C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.csproj.CoreCompileInputs.cache
-C:\wwwroot\ClientsideH2\ClientsideH2\obj\Debug\netcoreapp3.1\ClientsideH2.MvcApplicationPartsAssemblyInfo.cache
-C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\package-lock.json
-C:\wwwroot\ClientsideH2\ClientsideH2\bin\Debug\netcoreapp3.1\package.json
