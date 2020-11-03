@@ -16,39 +16,34 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/Stylesheet.css" />
 </head>
-<body style="background-image: url(/Images/cross.png); background-repeat: repeat;">
+<body style="background-image: url(/Images/cross.png); background-repeat: repeat; background-color: black!important">
     <div>
         <nav class="navbar navbar-expand-xl sticky-top navbar-dark bg-dark">
-            <a href="#" class="navbar-brand"><i class="fa fa-car"></i>Mercedes<b> Benz</b></a>
+            <a href="~/Home" class="navbar-brand"><i class="fa fa-car"></i>Mercedes<b> Benz</b></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-center">
                 <div class="navbar-nav ml-auto">
-                    <a href="Home" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Udstilling</span></a>
-                    <a href="Værksted/Create" class="nav-item nav-link"><i class="fa fa-gears"></i><span>Værksted</span></a>
-                    <a href="Medlemskab" class="nav-item nav-link"><i class="fa fa-users"></i><span>Medlemskab</span></a>
-                    <a href="Kontakt" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Kontakt</span></a>
+                    <a href="~/Home" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Udstilling</span></a>
+                    <a href="~/Værksted/Create" class="nav-item nav-link"><i class="fa fa-gears"></i><span>Værksted</span></a>
+                    <a href="~/Medlemskab/Create" class="nav-item nav-link"><i class="fa fa-users"></i><span>Medlemskab</span></a>
+                    <a href="~/Kontakt" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Kontakt</span></a>
                 </div>
             </div>
-            <!--
-            <form class="navbar-form form-inline">
-                <div class="input-group search-box">
-                    <input type="text" id="search" class="form-control" placeholder="Search here...">
-                    <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
-                </div>
-            </form>
-                -->
         </nav>
-        <div class="container">
-            <main role="main" style="background-color: white;" class="pb-3">
+        <div class="container" >
+            <main role="main" style="background-color: black;" class="pb-3">
                 @RenderBody()
             </main>
         </div>
     </div>
-    <footer class="border-top footer text-muted" style="background-color: white;">
+    <footer class="border-top footer text-muted" style="background-color: black; color:white;">
         <div class="container">
             &copy; 2020 - Mercedes-Benz - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            External api call (Weather) :
+            <p id="weather"></p>
+            <p id="weather2"></p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -59,4 +54,21 @@
 </html>
 
 <script>
+    $(document).ready(function () {
+        var element = document.getElementById(weather);
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://community-open-weather-map.p.rapidapi.com/weather?lat=0&lon=0&callback=test&id=2172797&lang=null&units=%2522metric%2522%20or%20%2522imperial%2522&mode=xml%252C%20html&q=Copenhagen",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+                "x-rapidapi-key": "39976a5b7amshd08e2a3f11e048fp1ea9f9jsn81aed690d90c"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
 </script>

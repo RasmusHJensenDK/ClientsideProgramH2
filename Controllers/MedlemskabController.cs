@@ -8,49 +8,44 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ClientsideH2.Controllers
 {
-    public class VærkstedController : Controller
+    public class MedlemskabController : Controller
     {
-        public static List<Models.Værksted> værkstedarbjede = new List<Models.Værksted>();
-        // GET: VærkstedController
+        public static List<Models.Medlemskab> medlemmer = new List<Models.Medlemskab>();
+        // GET: MedlemskabController
         public ActionResult Index()
         {
-            return View(new Models.Værksted());
+            return View(new Models.Medlemskab());
         }
 
-        // GET: VærkstedController/Details/5
+        // GET: MedlemskabController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: VærkstedController/Create
+        // GET: MedlemskabController/Create
         public ActionResult Create()
         {
-            return View(new Models.Værksted());
+            return View(new Models.Medlemskab());
         }
 
-        // POST: VærkstedController/Create
+        // POST: MedlemskabController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
-
             try
             {
-                Models.Værksted vv = new Models.Værksted();
-                vv.Navn = collection["Navn"];
-                vv.Email = collection["Email"];
-                vv.tlf = collection["tlf"];
-                vv.NrPlader = collection["NrPlader"];
-                vv.kilometer = collection["kilometer"];
-                vv.Model = collection["Model"];
-                vv.Afdeling = collection["Afdeling"];
-                vv.workorder = collection["workorder"];
-                værkstedarbjede.Add(vv);
+                Models.Medlemskab medlem = new Models.Medlemskab();
+                medlem.Navn = collection["Navn"];
+                medlem.Efternavn = collection["Efternavn"];
+                medlem.telefon = collection["telefon"];
+                medlem.Adresse = collection["Adresse"];
+                medlem.CPR = collection["CPR"];
+                medlemmer.Add(medlem);
 
                 DatabaseWrapper wrapper = new DatabaseWrapper("Data Source=01BIBME14RHJ;Initial Catalog=ClientSideDB;Integrated Security=True");
-                wrapper.ExecuteQuery($"INSERT INTO dbo.arbejdskort (Navn,Email,Nummerplads,Model,Afdeling,Arbejde, Mobil, Kilometer) VALUES('{værkstedarbjede[0].Navn}','{værkstedarbjede[0].Email}','{værkstedarbjede[0].NrPlader}','{værkstedarbjede[0].Model}','{værkstedarbjede[0].Afdeling}','{værkstedarbjede[0].workorder}','{værkstedarbjede[0].tlf}','{værkstedarbjede[0].kilometer}');");
-
+                wrapper.ExecuteQuery($"INSERT INTO dbo.Medlemmer (Navn,Efternavn,telefon,Adresse,CPR) VALUES('{medlemmer[0].Navn}','{medlemmer[0].Efternavn}','{medlemmer[0].telefon}','{medlemmer[0].Adresse}','{medlemmer[0].CPR}')");
 
                 return RedirectToAction(nameof(Create));
             }
@@ -60,13 +55,13 @@ namespace ClientsideH2.Controllers
             }
         }
 
-        // GET: VærkstedController/Edit/5
+        // GET: MedlemskabController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: VærkstedController/Edit/5
+        // POST: MedlemskabController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -81,13 +76,13 @@ namespace ClientsideH2.Controllers
             }
         }
 
-        // GET: VærkstedController/Delete/5
+        // GET: MedlemskabController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: VærkstedController/Delete/5
+        // POST: MedlemskabController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

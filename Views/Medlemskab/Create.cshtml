@@ -1,0 +1,89 @@
+﻿@model ClientsideH2.Models.Medlemskab
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div style="margin: auto; width: 100%; background-size: contain">
+    <img style="width: 100%; margin-top:-65px" src="~/Images/mbfinanas.jpg" ) />
+</div>
+<div >
+    <img style="margin-top: -100%; max-width: 400px; margin-left: 4%" src="~/Images/patronas.png" />
+</div>
+<div class="container" >
+    <div class="row" style="background-color: black; margin-top: -7%;">
+        <div class="col-sm" style="margin-top: -165px; max-width: 90%; margin-left: 5%; margin-right: 5%; box-shadow: 0px 0px 63px 0px rgba(255,255,255,1); border-radius: 25px; margin-bottom: 60px;">
+            <div class="mainvaerk" style="background-color: black; color: white;">
+                <h1 style="text-align: center; padding-top: 20px; font-weight:200; color: white!important">Få et <b>Eksklusivt</b> medlemskab ved MB</h1>
+                <h4 style="text-align: center; font-weight:200; text-transform: lowercase; color: palegoldenrod"> <i>.. med utroligt mange fordele!</i></h4>
+
+                <div class="row">
+                    <div class="col-sm" style="max-width: 50%; margin: auto; margin-top: 25px;">
+                        <span class="infotextvaerk">
+                            Som medlem ved MB får du bla. Fri service, gratis skift af vinter til sommerdæk. Døgnbemandet telefon hvis du skulle være ude for et uheld. Dette dækker de evt. omkostninger ved autohjælp/falck.
+                            <br />
+                            <img src="~/Images/Stationcar.png" style="max-width: 150px;" />
+                            <br />
+                            <br />
+                            Udfyld blot formularen nedenunder, og tryk ansøg - så vil vi behandle din ansøgning snarest.
+                        </span>
+                        <h2 style="text-align: center; margin-top: 25px; color: palegoldenrod"> Se fordele herunder.</h2>
+                        <span class="infotextvaerk">
+                            Vil du se flere fordele ved MB medlemskab?
+                        </span>
+                        <div class="text-center" style="margin-top: 25px;">
+                            <button type="button" style="background: rgba(247,187,19,0.9976365546218487)!important; box-shadow: 0px 0px 63px 0px rgba(247,187,19,1)" class="btn btn-warning">SE ALLE FORDELE</button>
+                            <span class="infotextvaerk" style="margin-top: 25px;">
+                                <b> Mercedes-Benz ønsker dig en fortræffelig dag.</b>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <form asp-action="Create" style="margin-top: 30px; margin-bottom: -25px;">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <div class="container" style="display: inline-block; margin-bottom: -18px;">
+                            <div class="row">
+                                <input asp-for="Navn" placeholder="Navn" class="form-control" style="width: 30%; margin-left: 18%; margin-right: 10%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="Navn" class="text-danger"></span>
+                                <input asp-for="Efternavn" placeholder="Email" class="form-control" style="width: 30%; margin-left: -5%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="Efternavn" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container" style="display: inline-block">
+                            <div class="row">
+                                <input asp-for="telefon" placeholder="Mobil" class="form-control" style="width: 30%; margin-left: 18%; margin-right: 10%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="telefon" class="text-danger"></span>
+                                <input asp-for="Adresse" placeholder="Nummerplade" class="form-control" style="width: 30%; margin-left: -5%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                                <span asp-validation-for="Adresse" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="CPR" placeholder="CPR NR" class="form-control" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center; background-color:rgba(192,192,192,0.3)" />
+                        <span asp-validation-for="CPR" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center;">
+                        <input asp-for="consense" type="checkbox" />
+                        Ja, jeg accepterer behandlingen af mit navn, adresse, telefonnummer, e-mail samt køretøj, for at kunne modtage informativt og uddannende indhold fra
+                        MB om MB, services og generel vedligehold af køretøjet. Behandlingen sker i henhold til MB persondatapolitik,
+                        hvori rettigheder i forbindelse med denne behandling er specificeret. Jeg kan tilbagekalde mit samtykke igennem MB Kundeportal eller ved at
+                        kontakte MB
+                    </div>
+                    <div class="form-group" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center;">
+                        <input asp-for="psdpt" type="checkbox" />
+                        Jeg acceptere MB Persondatapolitik *
+                    </div>
+                    <button type="submit" style="margin-left: 47%; margin-bottom: 15px; background: rgba(247,187,19,0.9976365546218487)!important; box-shadow: 0px 0px 63px 0px rgba(247,187,19,1) " class="btn btn-warning">Ansøg</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -17,15 +17,13 @@ namespace ClientsideH2.Repositories
 
         public void ExecuteQuery(string query)
         {
-
             using (var connection = new SqlConnection(_connectionString))
             {
                 using (var command = new SqlCommand(query, connection))
                 {
                     connection.Open();
-
-                    SqlDataAdapter da = new SqlDataAdapter(command);
-                    string abc = "l";
+                    command.ExecuteNonQuery();
+                    connection.Close();
                 }
             }
         }

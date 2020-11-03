@@ -21,13 +21,10 @@ namespace ClientsideH2.Models
         public string NrPlader { get; set; }
         public string kilometer { get; set; }
         public string workorder { get; set; }
+        public string consense { get; set; }
+
+        public string psdpt { get; set; }
 
         public string[] work = { "Service", "Reperation", "Syn", "Hjulskift", "Undervognsbehandling", "Andet" };
-
-        public void InsertIntoDB()
-        {
-            DatabaseWrapper wrapper = new DatabaseWrapper("Server=01BIBME14RHJ;Database=ClientSideDB;Integrated Security=SSPI;persist security info=True;");
-            wrapper.ExecuteQuery($"INSERT INTO dbo.arbejdskort (Navn,Email,Mobil,Nummerplads,Koert,Model,Afdeling,Arbejde) VALUES({Navn},{Email},{tlf},{NrPlader},{kilometer},{Model},{Afdeling},{workorder});");
-        }
     }
 }

@@ -5,13 +5,13 @@
 }
 
 
-<div style="margin: auto; width: 100%; background-size: contain">
-    <img style="width: 100%;" src="~/Images/mercedes_vaerksted.jpg" ) />
+<div style="margin: auto; width: 100%; background-size: contain;">
+    <img style="width: 100%;  border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;" src="~/Images/mercedes_vaerksted.jpg" />
 </div>
 <div class="container">
-    <div class="row" style="background-color: white;">
+    <div class="row" style="background-color: black;">
         <div class="col-sm" style="margin-top: -200px; max-width: 90%; margin-left: 5%; margin-right: 5%;">
-            <div class="mainvaerk">
+            <div class="mainvaerk" style="box-shadow: 0px 0px 63px 0px rgba(255,255,255,1); ">
                 <h1 style="text-align: center; padding-top: 20px; font-weight:200">Er det tid til en tur på værkstedet?</h1>
                 <h4 style="text-align: center; font-weight:200; text-transform: lowercase;"> <i>..i så fald, kan du booke tid herunder..</i></h4>
 
@@ -101,7 +101,6 @@
                         <input asp-for="kilometer" placeholder="Kørte kilometer" class="form-control" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center; background-color:rgba(192,192,192,0.3)" />
                         <span asp-validation-for="kilometer" class="text-danger"></span>
                     </div>
-                    <!--
                     <div class="form-group" style="width: 65%; margin-left: 18%; margin-right: 15%; text-align: center;">
                         <input asp-for="consense" type="checkbox" />
                         Ja, jeg accepterer behandlingen af mit navn, adresse, telefonnummer, e-mail samt køretøj, for at kunne modtage informativt og uddannende indhold fra
@@ -113,8 +112,7 @@
                         <input asp-for="psdpt" type="checkbox" />
                         Jeg acceptere MB Persondatapolitik *
                     </div>
-                        -->
-                    <button type="submit" class="btn btn-primary" >Kom nu forbandet sql.. ;)</button>
+                    <button type="submit" style="margin-left: 40%; margin-bottom: 15px"class="btn btn-primary" >Kom nu forbandet sql.. ;)</button>
                 </form>
             </div>
         </div>
